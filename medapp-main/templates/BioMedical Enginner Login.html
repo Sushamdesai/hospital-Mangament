@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Login</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+  <div class="form">
+     <h4>BioMedical Enginner Login</h4>
+<div class="login">
+<form action="{{ url_for('doctor_login') }}" method="post" >
+    <label for="name" class="output">Name:</label>
+    <br>
+    <input type="text" id="name" name="name" required placeholder="Username"><br><br>
+
+    <label for="reg_no" class="output">Registration Number:</label>
+    <input type="text" id="reg_no" name="reg_no" required placeholder="Registration Number"><br><br>
+
+  <button class="login">Login</button>
+
+    <div class="suggest">
+        <div class="remember">
+            <input type="checkbox" checked>
+            <span>Remember Me</span>
+        </div>
+        <div class="forgot">
+            <span>Forgot Password</span>
+        </div>
+    </div>
+</div>
+</form>
+</div>
+</body>
+</html>

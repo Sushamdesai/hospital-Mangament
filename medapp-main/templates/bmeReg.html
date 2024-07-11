@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="wrapper">
+<h1>Registration Form</h1>
+
+<form action="{{ url_for('doctor_registration') }}" method="post" autocomplete="off">
+    
+      
+<div class="input-box">
+ <div class="input-field">   
+    <label for="name">Name:</label><br>
+    
+    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+</div>
+<div class="input-field">   
+    <label for="specialty">Specialty:</label><br>
+    <input type="text" id="specialty" name="specialty" placeholder="Specialty" required><br><br>
+</div>
+</div>
+   
+    <div class="input-box">
+        <div class="input-field">
+      
+    <label for="reg_no">Registration Number:</label><br>
+    <input type="text" id="reg_no" name="reg_no" placeholder="Registration Number" required><br><br>
+</div>
+<div class="input-field">   
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city" placeholder="city" required><br><br>
+</div>
+</div>
+
+    <div class="input-box">
+        <div class="input-field">
+    <label for="town">Town:</label><br>
+    <input type="text" id="town" name="town" placeholder="Town" required><br><br>
+</div>
+<div class="input-field">   
+    <label for="area_code">Area Code:</label><br>
+    <input type="text" id="area_code" name="area_code" placeholder="Area Code" required><br><br>
+</div>
+
+</div>
+     
+    <div class="input-box">
+        <div class="input-field">
+        <label >Meeting Link:</label><br>
+        <input type="text" id="meeting_link" name="meeting_link" placeholder="Meeting_link" required><br><br>
+    </div>
+
+</div> <br>
+
+
+    
+    <input type="submit" value="Register" class="btn"> <button onclick="location.href='doctor_login'" class="btn">Login</button>
+
+</form>
+</div>
+
+<script>
+function validateForm() {
+    // You can add validation logic here if needed
+    return true; // Return false to prevent the form from being submitted
+}
+</script>
+
+</body>
+</html>

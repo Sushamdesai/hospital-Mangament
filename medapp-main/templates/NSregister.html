@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="./style3.css">
+</head>
+<body>
+    <div class="wrapper">
+<h1>Nurse Station Registration</h1>
+
+<form action="{{ url_for('user_registration') }}" method="post">
+    <div class="input-box">
+        <div class="input-field"> 
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+</div>
+    <div class="input-field"> 
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" required><br><br>
+</div>
+</div>
+    <div class="input-box">
+        <div class="input-field"> 
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" placeholder="city" required><br><br>
+</div>
+    <div class="input-field"> 
+    <label for="town">Town:</label>
+    <input type="text" id="town" name="town" placeholder="Town" required><br><br>
+</div>
+</div>
+    <div class="input-box">
+        <div class="input-field"> 
+    <label for="area_code">Area Code:</label>
+    <input type="text" id="area_code" name="area_code" placeholder="Area Code" required><br><br>
+</div>
+    <div class="input-field"> 
+    <label >Password:</label>
+    <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+</div>
+</div>
+    <input type="submit" value="Register" class="btn"> <button onclick="location.href='user_login'" class="btn">Login</button>
+</form>
+    </div>
+</body>
+</html>
